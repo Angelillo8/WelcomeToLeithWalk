@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Angel Gonzalez Camejo">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Project for Edinburgh College">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/AGC_LW_style.css">
+    <title>Welcome to Leith Walk</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/leith_walk_logo1.png" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="history.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="container-fluid">
+            <div class="jumbotron">
+                <h1 class="display-4 box">Welcome to Leith Walk!</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="col-md-12 column">
+            <h1 class="text-center display-5 green">Hello!</h1>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+            </div>
+            <div class="row">
+                <div class="col-md-6 column">
+                    <h1 class="display-5 green">Contact me!</h1>
+                    <form action="POST" data-netlify="true" method="post" class="needs-validation" novalidate >
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="display-6 green" for="validationCustom">Email address</label>
+                                <input class="form-control" type="email" id="validationCustom" name="email"
+                                    placeholder="Enter email" required>
+                                <div class="valid-feedback">
+                                    Looking nice!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please, enter a valid email!
+                                </div>
+                                <small class="form-text text-muted">Your email won't be shared with anyone!</small>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md">
+                                <label class="display-6 green">Your message</label>
+                                <textarea class="form-control" name="message" rows="3" required
+                                    minlength="2"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                <label class="form-check-label" for="invalidCheck2">
+                                    Agree to terms and conditions
+                                </label>
+                                <div class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Send!" class="btn btn-dark display-8">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 column">
+                    <h1 class="display-6 green">About me:</h1>
+                    <p class="green">My name is Angel.</p>
+                    <p class="green">I am a student at Edinburgh College.</p>
+                    <p class="green">I am a good person and I like the highland cows.</p>
+                    <img src="images_own/cows.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 column">
+                    <h1 class="text-center display-5 green">Come and visit Leith Walk!</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 column15">
+                    <img src="images/edinburgh_leithwalk.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container-fluid">
+            <h1 class="text-center display-8">A bit of the lovely Leith Walk</h1>
+            <h4 class="text-center display-8">References:</h4>
+            <h4 class="text-center display-8"><a href="https://en.wikipedia.org/wiki/Leith_Walk">Wikipedia</a></h4>
+            <h4 class="text-center display-8"><a
+                    href="https://search.nls.uk/primo-explore/fulldisplay?docid=44NLS_ALMA21448084910004341&context=L&vid=44NLS_VU1&lang=en_US&search_scope=SCOPE1&adaptor=Local%20Search%20Engine&tab=tab1_local&query=any,contains,leith%20walk%20a%20social%20&mode=basic">
+                    Leith Walk and Greenside : a social history
+                </a>
+            </h4>
+            <span class="text-muted">&copy; 2020. The Walk. By Angel González.</span>
+        </div>
+    </footer>
+</body>
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to var forms = document.getElementsByClassName('needs-validation');
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
+
+
+</html>
